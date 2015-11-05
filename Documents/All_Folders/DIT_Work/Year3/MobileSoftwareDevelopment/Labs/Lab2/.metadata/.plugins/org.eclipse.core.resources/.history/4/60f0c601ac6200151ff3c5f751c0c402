@@ -1,0 +1,12 @@
+package gmail.islarf6546.com;
+
+public class Main {
+	public static void main(String[] args) {
+		Shape[] c = new Shape[10];
+		
+		for(int i=0; i<c.length/2; i++)  {
+			c[i] = new Square((i+1)*2);
+		}
+		for(int i=c.length/2; i<c.length; i++)
+	}
+}

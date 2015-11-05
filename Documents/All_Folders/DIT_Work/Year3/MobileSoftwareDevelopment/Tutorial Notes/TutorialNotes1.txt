@@ -1,0 +1,64 @@
+How can a list view screen have 2 xml files
+
+Activitymain.xml
+	list view tag
+		Overall screen, some sort of list
+		Didn't need special "row.xml" due to andoid.R.layout.simple_list_item_1
+
+row.xml
+
+	<ImageView
+		src = "@drawable/image.png"/>
+
+
+onCreate(  )  {
+	
+	String[] countries = {"Ireland"}
+
+	ArrayAdapter myAdapter = new ArrayAdapter  (
+		this,
+		row.xml,
+		R.id.textView1,
+		counries
+	);
+}
+
+----------------------------------
+
+countries
+write code, so goes to different activity, displays the counry, and the flag.
+Intent is used to switch screens
+
+can use a method called "putExtra()" to send key values, data, to the next activity
+
+
+---
+protected void onListItemClick(ListView, View v, int position, int id)  {
+	
+}
+
+To capture GUI Events:
+- A listener (to listen for clicks)
+- put listener onto a widget wanted to listen to (set onto)
+- The callback method, called when hears thing listening to
+
+not needed when extending ListActivity, as list activity and listeners are already setup in the parent class(es)
+
+
+
+LayoutInflater
+
+- specific to android
+- the api around are inflation
+- "inflate it" want to display it graphically
+- mostly done underneath, sometimes need to do it "yourself"
+
+
+Array Adapter
+
+-- 
+class MyList extends ListActivity  {
+	class MyAdapter extends ArrayAdapter   {
+		
+	}
+}

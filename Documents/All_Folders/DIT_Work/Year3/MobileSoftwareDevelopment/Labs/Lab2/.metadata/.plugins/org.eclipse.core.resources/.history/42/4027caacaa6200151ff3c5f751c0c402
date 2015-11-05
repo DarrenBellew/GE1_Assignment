@@ -1,0 +1,28 @@
+package gmail.islarf6546.com;
+
+public class Circle extends Shape {
+	
+	int rad;
+	
+	public Circle(int rad) {
+		this.rad = rad;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getRad()  {
+		return rad;
+	}
+	public void setRad(int rad)  {
+		this.rad=rad;
+	}
+	
+	public String toString()  {
+		return("Circle Radius: "+area());
+	}
+	
+}

@@ -1,0 +1,14 @@
+<!--Lab 3; Mobile Software Dev!-->
+
+<Student>
+	<name gender = "m">Gabe Newell</name>
+	<address>Valve Corps, Half-Life 3</address>
+	<age>33</age>
+	<study>
+		<course foptime = "Part Time">
+			Software Engineering
+		</course>
+		<city>Dublin</city>
+		<institution>Dublin, Institute of Technology</institution>
+	</study>
+</Student>

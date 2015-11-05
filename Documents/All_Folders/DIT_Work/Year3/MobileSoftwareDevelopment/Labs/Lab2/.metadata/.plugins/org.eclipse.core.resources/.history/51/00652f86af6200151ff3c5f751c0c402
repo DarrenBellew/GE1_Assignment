@@ -1,0 +1,21 @@
+package gmail.islarf6546.com;
+
+public class Main {
+	public static void main(String[] args) {
+		Shape[] c = new Shape[20];
+		int i=0;
+		
+		for(i=0; i<c.length/4; i++)  {
+			c[i] = new Square((i+1)*2);
+		}
+		
+		for(i=c.length/4; j<i + c.length/4; j++)  {
+			c[i] = new Circle((i+1)*2);
+		}
+		
+		for(int i=c.length/4)
+		for(int i=0; i<c.length; i++)  {
+			System.out.println("Object: " + c[i].getClass().getSimpleName() +"; "+ c[i]);
+		}
+	}
+}

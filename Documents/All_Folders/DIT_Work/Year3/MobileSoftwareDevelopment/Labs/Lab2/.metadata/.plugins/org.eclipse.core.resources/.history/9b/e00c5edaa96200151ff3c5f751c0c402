@@ -1,0 +1,14 @@
+package gmail.islarf6546.com;
+
+public class Circle extends Shape {
+	
+	int dia;
+	int circ;
+	
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

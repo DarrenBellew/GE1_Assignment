@@ -1,0 +1,18 @@
+
+public class Student extends Person {
+
+	String studentID;
+	String courseCode;
+	
+	
+	public Student(String name, char gender, String studentID, String courseCode) {
+		super(name, gender);
+		this.studentID = studentID;
+		this.courseCode = courseCode;
+		// TODO Auto-generated constructor stub
+	}
+
+	public String toString()  {
+		return super.toString() + "; Student ID: " + studentID + "; Course Code: " + courseCode;
+	}
+}

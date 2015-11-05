@@ -1,0 +1,17 @@
+package gmail.islarf6546.com;
+
+public class Square extends Shape {
+
+	int side;
+	
+	public Square(int side)  {
+		
+	}
+	
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

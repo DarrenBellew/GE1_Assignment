@@ -1,0 +1,22 @@
+package gmail.islarf6546.com;
+
+public class Sphere extends Circle implements ThreeDShape {
+
+	public Sphere(int rad) {
+		super(rad);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

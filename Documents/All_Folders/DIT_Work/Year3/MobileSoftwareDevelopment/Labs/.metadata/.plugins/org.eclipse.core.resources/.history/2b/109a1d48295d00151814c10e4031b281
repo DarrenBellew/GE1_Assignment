@@ -1,0 +1,32 @@
+
+public class Student extends Person implements PublishDetails{
+
+	String studentID;
+	String courseCode;
+	
+	
+	public Student(String name, char gender, String studentID, String courseCode) {
+		super(name, gender);
+		this.studentID = studentID;
+		this.courseCode = courseCode;
+		// TODO Auto-generated constructor stub
+	}
+
+	public String toString()  {
+		return super.toString() + "; Student ID: " + studentID + "; Course Code: " + courseCode;
+	}
+
+	@Override
+	public void confirmDetails() {
+		// TODO Auto-generated method stub
+		System.out.printf("\nStudent name: %s", getName());
+	}
+
+	@Override
+	public void getCourseCode() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

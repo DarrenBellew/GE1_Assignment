@@ -1,0 +1,20 @@
+package gmail.islarf6546.com;
+
+public class Cube extends Square implements ThreeDShape {
+
+	public Cube(int side) {
+		super(side);
+	}
+
+	@Override
+	public double volume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		return side^3;
+	}
+
+}

@@ -1,0 +1,74 @@
+Mobile Software | Assignment
+
+-- Idea: Unit Conversion App
+
+Store conversion forumulaes in a SQLLite Database
+
+-- No input boxes
+User:
+	First: picks the number from dropdowns, easier to control on a mobile, rather than to type
+		1.1: can have optional button to toggle between EditText and a Dropdown
+	Can change the conversion without the loss of data in the edittext/dropdowns
+	Switch Button to swap the items in the conversio
+
+	Can make their own conversion option and formula (Custom).
+
+
+	Create multiple tabs, with menu box; slide screen to switch between each one (Similar to changing tabs in google chrome)
+		(A limited amount? or unlimited?)
+
+Custom Conversions
+	Can add / remove customs
+		can set custom rules for their conversions
+
+	Conversions are also split into category, for user preference (Can toggle view)
+		Eg:
+			Game related
+				(TF2: Ref -> Scrap; Ref -> €/$)
+					1 scrap = 0.11, 1 ref = 1.00, however: 0.99 = 1.00, problem in calculation (Will need research to make this work)
+			Currency
+				Easily enough, however, will it be static or dynamic (Same with the TF2 metal conversions)
+
+			Weights/Amounts
+				Lt -> Ml
+				pounds -> ounces -> grams -> kilograms
+
+
+Tables:
+	Conversion type:
+		ConversionTypeID
+		ConversionName
+
+	Conversion:
+		convId,
+		unit1,
+		unit2,
+		Formula(or)Recipe,
+		Rules,--maybeNot
+		unitId;
+
+	Units:
+		unitId
+		UnitShort
+
+--Future additions; after assignment:
+	Creatable addons, (Packages) that can be downloaded and added to the app!
+
+Tables for app:
+
+
+Tables:
+	Units:
+		UnitID Number (5),
+		UnitName VARCHAR2(50),
+		CategoryId Number (5);
+
+	Conversion:
+		ConversionID Number (5),
+		Unit1ID Number (5),
+		Unit2ID Number (5),
+		Formula VARCHAR2(50);
+
+	Category
+		CategoryID Number (5),
+		CategoryName VARCHAR2(50);

@@ -1,0 +1,9 @@
+
+public class Student extends Person {
+
+	public Student(String name, char gender) {
+		super(name, gender);
+		// TODO Auto-generated constructor stub
+	}
+
+}
